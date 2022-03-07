@@ -1,0 +1,25 @@
+{
+  "name": "@gregolive/img-carousel",
+  "version": "1.0.0",
+  "description": "An image carousel/slider powered by Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregolive/img-carousel.git"
+  },
+  "keywords": [
+    "javascript",
+    "image",
+    "carousel",
+    "slider"
+  ],
+  "author": "Gregory Olive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregolive/img-carousel/issues"
+  },
+  "homepage": "https://github.com/gregolive/img-carousel#readme"
+}
