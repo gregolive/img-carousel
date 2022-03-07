@@ -43,7 +43,7 @@ Append to the DOM.
 document.body.appendChild(carousel);
 ```
 
-Default styling (colors, padding, etc.) can be overidden by overiding the CSS variables in:
+Default styling (colors, padding, etc.) can be overridden by overriding the CSS variables in:
 
 ```
 :root {
