@@ -1,6 +1,6 @@
 {
   "name": "@gregolive/img-carousel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An image carousel/slider powered by Javascript.",
   "main": "index.js",
   "scripts": {
