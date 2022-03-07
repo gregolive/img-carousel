@@ -1,0 +1,79 @@
+
+:root {
+  --carousel-height: auto;
+  --nav-arrow-color: white;
+  --nav-arrow-size: 3rem;
+  --nav-arrow-pad: 1rem;
+  --dot-div-height: 3rem;
+  --dot-size: 15px;
+  --dot-color: lightgray;
+  --dot-active-color: lightslategrey;
+}
+
+.slideshow-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-slide {
+  display: none;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.img-slide.active {
+  display: block;
+}
+
+.img-slide img {
+  width: 100%;
+  height: var(--carousel-height);
+  object-fit: cover;
+}
+
+.nav-arrow {
+  color: var(--nav-arrow-color);
+  font-size: var(--nav-arrow-size);
+  width: auto;
+  padding: 0 var(--nav-arrow-pad);
+  position: absolute;
+  top: calc(50% - (var(--nav-arrow-size) / 2));
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.nav-arrow-right {
+  right: 0;
+}
+
+.nav-dots {
+  height: var(--dot-div-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--dot-size) / 1.5);
+}
+
+.dot {
+  cursor: pointer;
+  height: var(--dot-size);
+  width: var(--dot-size);
+  border-radius: 50%;
+  background-color: var(--dot-color);
+}
+
+.dot.active, .dot:hover {
+  background-color: var(--dot-active-color);
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
